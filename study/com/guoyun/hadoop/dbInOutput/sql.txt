@@ -1,0 +1,8 @@
+CREATE DATABASE school;
+DROP TABLE IF EXISTS `school`.`teacher`;
+CREATE TABLE  `school`.`teacher` (
+  `id` int(11) default NULL primary key auto_increment,
+  `name` char(20) default NULL,
+  `age` int(11) default NULL,
+  `departmentID` int(11) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
