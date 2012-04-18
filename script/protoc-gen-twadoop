@@ -1,0 +1,5 @@
+#!/bin/bash
+
+bindir=`/usr/bin/dirname "$0"`
+
+/usr/bin/java -cp $bindir/../lib/*: com.twitter.elephantbird.proto.HadoopProtoCodeGenerator $bindir/config-twadoop.yml -
